@@ -21,9 +21,18 @@ margin:auto;
 box-shadow:0 6px 20px rgba(0,0,0,0.12);
 }
 
+/* 기본 이미지 (프로필 + 그래프) */
 img{
 width:300px;
 margin:20px;
+border-radius:12px;
+}
+
+/* LLM 결과 이미지 크게 */
+.large-img{
+width:100%;
+max-width:800px;
+margin-top:20px;
 border-radius:12px;
 }
 </style>
@@ -45,7 +54,8 @@ border-radius:12px;
 
 <h2>LLM 실행 결과</h2>
 <p>사용자가 질문을 입력하면 Gemini API를 통해 LLM이 답변을 생성하는 Tool을 구현하였다.</p>
-<img src="LangChain.png" alt="LLM 실행 결과">
+
+<img src="LangChain.png" class="large-img" alt="LLM 실행 결과">
 
 </div>
 
