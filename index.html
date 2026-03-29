@@ -21,14 +21,14 @@ margin:auto;
 box-shadow:0 6px 20px rgba(0,0,0,0.12);
 }
 
-/* 기본 이미지 (프로필 + 그래프) */
+/* 기본 이미지 */
 img{
 width:300px;
 margin:20px;
 border-radius:12px;
 }
 
-/* LLM 결과 이미지 크게 */
+/* 큰 이미지 */
 .large-img{
 width:100%;
 max-width:800px;
@@ -43,19 +43,24 @@ border-radius:12px;
 
 <div class="card">
 
+<!-- 1. 프로필 -->
 <img src="jinho.jpg">
 
 <h1>이진호</h1>
-
 <p>이진호의 홈페이지입니다.</p>
 
-<h2>3D Plot of Objective Functions</h2>
-<img src="graph.png">
+<!-- 2. 다음 숙제 (추가될 자리) -->
+<h2>다음 과제</h2>
+<img src="next.png" class="large-img">
 
+<!-- 3. LangChain -->
 <h2>LLM 실행 결과</h2>
 <p>사용자가 질문을 입력하면 Gemini API를 통해 LLM이 답변을 생성하는 Tool을 구현하였다.</p>
+<img src="LangChain.png" class="large-img">
 
-<img src="LangChain.png" class="large-img" alt="LLM 실행 결과">
+<!-- 4. 그래프 -->
+<h2>3D Plot of Objective Functions</h2>
+<img src="graph.png">
 
 </div>
 
