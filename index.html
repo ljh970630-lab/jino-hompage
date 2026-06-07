@@ -6,54 +6,57 @@
 
 <style>
 body{
-background:#f4f4f4;
-text-align:center;
-font-family:Arial;
-padding:60px;
+    background:#f4f4f4;
+    text-align:center;
+    font-family:Arial, sans-serif;
+    padding:60px;
 }
 
 .card{
-background:white;
-padding:30px;
-border-radius:16px;
-max-width:900px;
-margin:auto;
-box-shadow:0 6px 20px rgba(0,0,0,0.12);
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    max-width:900px;
+    margin:auto;
+    box-shadow:0 6px 20px rgba(0,0,0,0.12);
 }
 
 /* 기본 이미지 */
 img{
-width:300px;
-margin:20px;
-border-radius:12px;
+    width:300px;
+    margin:20px;
+    border-radius:12px;
 }
 
 /* 큰 이미지 */
 .large-img{
-width:100%;
-max-width:800px;
-margin-top:20px;
-border-radius:12px;
+    width:100%;
+    max-width:800px;
+    margin-top:20px;
+    border-radius:12px;
 }
 
-/* PDF 영역 */
-.pdf-view{
-width:100%;
-height:900px;
-margin-top:20px;
-border:none;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.15);
+/* 파일 박스 */
+.file-box{
+    background:#f9f9f9;
+    padding:20px;
+    border-radius:12px;
+    margin:20px auto;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.file-box p{
+    margin:15px 0;
 }
 
 a{
-color:#0066cc;
-text-decoration:none;
-font-weight:bold;
+    color:#0066cc;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 a:hover{
-text-decoration:underline;
+    text-decoration:underline;
 }
 </style>
 
@@ -63,43 +66,56 @@ text-decoration:underline;
 
 <div class="card">
 
-<img src="jinho.jpg" alt="이진호 사진">
+    <img src="jinho.jpg" alt="이진호 사진">
 
-<h1>이진호</h1>
-<p>이진호의 홈페이지입니다.</p>
+    <h1>이진호</h1>
 
-<!-- PDF 추가 -->
+    <p>이진호의 홈페이지입니다.</p>
 
-<h2>LoRA Homework PDF</h2>
+    <h2>과제 제출 파일</h2>
 
-<embed 
-    src="LLM_Homework.pdf"
-    type="application/pdf"
-    class="pdf-view">
+    <div class="file-box">
 
-<p>
-  <a href="LLM_Homework.pdf" target="_blank">
-    PDF 새창으로 열기
-  </a>
-</p>
+        <p>
+            <a href="Homework_LLM_품질 통계 Agentic AI_260607.pptx" target="_blank">
+                📊 Homework_LLM_품질 통계 Agentic AI_260607.pptx
+            </a>
+        </p>
 
-<h2>파라미터 설정 link</h2>
-<p>
-  <a href="https://gemini.google.com/app/3945d04ea4e0d1b3?hl=ko" target="_blank">
-    파라미터 설정 바로가기
-  </a>
-</p>
+        <p>
+            <a href="실행 결과.pdf" target="_blank">
+                📄 실행 결과.pdf
+            </a>
+        </p>
 
-<h2>LLM 실행 결과</h2>
-<p>
-사용자가 질문을 입력하면 Gemini API를 통해 
-LLM이 답변을 생성하는 Tool을 구현하였다.
-</p>
+        <p>
+            <a href="작성 코드.pdf" target="_blank">
+                💻 작성 코드.pdf
+            </a>
+        </p>
 
-<img src="LangChain.png" class="large-img" alt="LLM 실행 결과">
+    </div>
 
-<h2>3D Plot of Objective Functions</h2>
-<img src="graph.png" class="large-img" alt="3D 그래프">
+    <h2>파라미터 설정 Link</h2>
+
+    <p>
+        <a href="https://gemini.google.com/app/3945d04ea4e0d1b3?hl=ko" target="_blank">
+            파라미터 설정 바로가기
+        </a>
+    </p>
+
+    <h2>LLM 실행 결과</h2>
+
+    <p>
+        사용자가 질문을 입력하면 Gemini API를 통해
+        LLM이 답변을 생성하는 Tool을 구현하였다.
+    </p>
+
+    <img src="LangChain.png" class="large-img" alt="LLM 실행 결과">
+
+    <h2>3D Plot of Objective Functions</h2>
+
+    <img src="graph.png" class="large-img" alt="3D 그래프">
 
 </div>
 
